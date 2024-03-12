@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A stimulus-organism-response model of willingness to buy from advertising speech using voice quality</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+
+
+<header>
+
+
+	<h1>
+		<p>A stimulus-organism-response model of willingness to buy<br>from advertising speech using voice quality</p>
+	</h1>	
+
+	<h2>
+		<p>Mizuki Nagano<sup>1</sup>, Yusuke Ijima<sup>1</sup> and Sadao Hiroya<sup>2</sup></p>
+	</h2>	
+
+	<h3>
+		<p><sup>1</sup>NTT Human Informatics Laboratories, Japan<br>
+			<sup>2</sup>NTT Communication Science Laboratories, Japan</p>
+	</h3>	
+
+
+</header>
+
+
+<main>
+
+
+
+
+
+
+<div id="audio" class="bottom">
+
+  <h2>Examples of synthetic speech (Section 3.1)</h2>
+<!--   <ul>
+	<li>The reference speech from Female1 and Female2 were used for conditioning spectrogram and duration respectively.</li>
+	<li>Please confirm that the proposed method can synthesize speech whose speech rhythm is close to that of the reference speech for duration while maintaining voice quality of the reference speech for spectrogram. </li>
+  </ul> -->
+
+
+
+
+<table align="center" class="bottom">
+    <tr>
+      <th>Female speech</th>
+      <th>Sentence #1</th>
+      <th>Sentence #2</th>      
+      <th>Sentence #4</th> 
+    </tr>
+    <tr>
+      <td>Speaker #1</td>
+      <td><audio src="./audio/F13_1.wav" controls></audio></td>
+      <td><audio src="./audio/F13_2.wav" controls></audio></td>
+      <td><audio src="./audio/F13_4.wav" controls></audio></td>
+    </tr>
+    <tr>
+      <td>Speaker #2</td>
+      <td><audio src="./audio/F8_1.wav" controls></audio></td>
+      <td><audio src="./audio/F8_2.wav" controls></audio></td>
+      <td><audio src="./audio/F8_4.wav" controls></audio></td>
+    </tr>
+  </table>
+
+
+
+
+<table align="center" class="bottom">
+    <tr>
+      <th>Male speech</th>
+      <th>Sentence #8</th>
+      <th>Sentence #12</th>      
+      <th>Sentence #13</th> 
+    </tr>
+    <tr>
+      <td>Speaker #1</td>
+      <td><audio src="./audio/M7_8.wav" controls></audio></td>
+      <td><audio src="./audio/M7_12.wav" controls></audio></td>
+      <td><audio src="./audio/M7_13.wav" controls></audio></td>
+    </tr>
+    <tr>
+      <td>Speaker #2</td>
+      <td><audio src="./audio/M5_8.wav" controls></audio></td>
+      <td><audio src="./audio/M5_12.wav" controls></audio></td>
+      <td><audio src="./audio/M5_13.wav" controls></audio></td>
+    </tr>
+  </table>
+
+
+
+
+
+<!-- 
+<table>
+	<tbody>
+		<tr>
+			<td style="text-align:center">x-vector (sep)</td>
+			<td style="text-align:center">x-vector (sep)</td>
+			<td style="text-align:center">HuBERT (sep, LSTM)</td>
+			<td style="text-align:center">x-vector (sep)</td>
+
+		</tr>
+		<tr>
+			<td style="text-align:center">Female child</td>
+			<td><audio src="./F10003_ref.wav" controls></audio></td>
+			<td><audio src="./F10003_p_x.wav" controls></td>
+			<td><audio src="./F10003_p_ssl.wav" controls></td>
+			<td><audio src="./F10003_np_x.wav" controls></td>
+			<td><audio src="./F10003_np_ssl.wav" controls></td>
+			<td><audio src="./F10003_np_ref.wav" controls></td>				
+		</tr>
+		<tr>
+			<td style="text-align:center">Male child</td>
+			<td><audio src="./M10004_ref.wav" controls></audio></td>
+			<td><audio src="./M10004_p_x.wav" controls></td>
+			<td><audio src="./M10004_p_ssl.wav" controls></td>
+			<td><audio src="./M10004_np_x.wav" controls></td>
+			<td><audio src="./M10004_np_ssl.wav" controls></td>
+			<td><audio src="./M10004_np_ref.wav" controls></td>								
+		</tr>
+		<tr>
+			<td style="text-align:center">Female adult</td>
+			<td><audio src="./F2003_ref.wav" controls></audio></td>
+			<td><audio src="./F2003_p_x.wav" controls></td>
+			<td><audio src="./F2003_p_ssl.wav" controls></td>
+			<td><audio src="./F2003_np_x.wav" controls></td>
+			<td><audio src="./F2003_np_ssl.wav" controls></td>
+			<td><audio src="./F2003_np_ref.wav" controls></td>							
+		</tr>
+		<tr>
+			<td style="text-align:center">Male adult</td>
+			<td><audio src="./M40005_ref.wav" controls></audio></td>
+			<td><audio src="./M40005_p_x.wav" controls></td>
+			<td><audio src="./M40005_p_ssl.wav" controls></td>
+			<td><audio src="./M40005_np_x.wav" controls></td>
+			<td><audio src="./M40005_np_ssl.wav" controls></td>
+			<td><audio src="./M40005_np_ref.wav" controls></td>								
+		</tr>
+
+
+	</tbody>
+</table> -->
+
+
+
+</div>
+
+
+<!-- 
+<div id="about" class="bottom">
+  <h2>About this page</h2>
+  <ul>
+	<li>HiFi-GAN was used for all speech samples generation.</li>
+	<li>All speakers in this page are chosen from test data.</li>
+  </ul>
+</div> -->
+
+
+<div id="sentence" class="bottom">
+  <h2>Advertising sentences (Section 3.1)</h2>
+  <p>The Japanese ad advertising sentences used in the experiment is translated below.</p>
+  <ol>
+	<li>This dehumidifier can remove 5.6 liters of moisture per day.</li>
+	<li>This latest model can automatically treat airborne dirt and odors.</li>
+	<li>It's a flavorful and refreshing orange juice made by carefully squeezing high-quality oranges that have been exposed to plenty of sunlight. </li>
+	<li>These pickled plums, the best of the best, are harvested in Kishu Wakayama, one of Japan's leading plum-producing regions.</li>
+	<li>Red meat of minke whales and other baleen whale species, were cooked at high pressure to tenderness.</li>
+	<li>The meat is firm and chewy, and the more you chew, the more the sweetness of the globefish spreads all over your mouth.</li>
+	<li>We paid close attention to ensuring that soy lecithin, vitamin E, and medium-chain fatty acids are balanced and easily absorbed.</li>
+	<li>These stylish and lightweight "casual shoes" are made from luxurious cowhide, exuding a sense of high-end quality.</li>
+	<li>The rubber has an adjustable stopper, so you don't even need to tie the laces, making them easy to put on and take off. </li>
+	<li>Why not add a coveted pair of leather pants to your wardrobe this winter? </li>
+	<li>It draws you in. The language of flowers in this trial bouquet of five blue roses is "God Bless".</li>
+	<li>The recommended points are the ease of the insurance premium and the　comprehensive nature of the coverage.</li>
+	<li>Feel the status of living here in this upscale property that we deliver with confidence.</li>		
+  </ol>
+</div>	
+
+
+
+</main>
+
+
+</body>
+
+
+</html>
